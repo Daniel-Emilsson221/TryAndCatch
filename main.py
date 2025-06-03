@@ -106,7 +106,7 @@ class Window:
                 self.reset_btn['command'] = self.reset
 
             if self.counter == 0:
-                self.msg_label['text'] = 'You have no tries left.'
+                self.msg_label['text'] = f'You have no tries left. The answer was {self.number}'
                 self.msg_label['fg'] = 'tomato'
                 self.btn['state'] = 'disabled'
                 self.reset_btn['state'] = 'normal'
